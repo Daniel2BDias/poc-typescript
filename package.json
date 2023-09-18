@@ -27,7 +27,8 @@
     "http-errors": "^2.0.0",
     "http-status": "^1.7.0",
     "joi": "^17.10.2",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "pg-error-enum": "^0.7.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.14",

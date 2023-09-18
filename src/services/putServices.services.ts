@@ -1,7 +1,7 @@
 import { getRepos } from "@/repositories/getRepos.repositories";
 import { putRepos } from "@/repositories/putRepos.repositories";
 
-export default async function putServices(id, name, phone, email): Promise<void> {
+export default async function putServices(id: string, name: string, phone: string, email: string): Promise<void> {
     const checkForRegisters = await getRepos.getOneRepo(id);
     if(Number(checkForRegisters?.id) !== Number(id)) {
         throw new Error("NotFound");
